@@ -6,10 +6,11 @@ Please follow below steps to run on local:
 2. Update the conn string in App.config file 
 3. For Dapper - update LocalConnectionString
 4. For Entity Framework - update SchoolContext
-5. Create Sproc on newly created database
+5. Create below sproc on newly created database
 --------------------------------
 
---SQL Stored Procedure <br/>
+```
+--SQL Stored Procedure
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -20,6 +21,7 @@ AS
 BEGIN    
 	DELETE FROM dbo.Employee WHERE FirstName = @FirstName;
 END
+```
 
 --------------------------------
 6. Uncomment Program.cs Line # 18 and comment Line # 19 to run the Dapper Demo
