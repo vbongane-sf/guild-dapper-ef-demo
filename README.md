@@ -2,7 +2,7 @@
 Demo for guild session on Dapper-EntityFramework
 
 Please follow below steps to run on local:
-1. Create the database on local sql server
+1. Create the database on local sql server one for Dapper demo and second for Entity Framework demo
 2. Update the conn string in App.config file 
 3. For Dapper - update LocalConnectionString
 4. For Entity Framework - update SchoolContext
